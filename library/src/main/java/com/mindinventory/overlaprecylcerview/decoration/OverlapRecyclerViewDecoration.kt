@@ -1,12 +1,12 @@
 package com.mindinventory.overlaprecylcerview.decoration
 
 import android.graphics.Rect
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 
 class OverlapRecyclerViewDecoration(private val overlapLimit: Int, private val overlapWidth: Int) : RecyclerView.ItemDecoration() {
-    override fun getItemOffsets(outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State?) {
+    override fun getItemOffsets(outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State) {
 
         //-----get current position of item
         val itemPosition = parent.getChildAdapterPosition(view)

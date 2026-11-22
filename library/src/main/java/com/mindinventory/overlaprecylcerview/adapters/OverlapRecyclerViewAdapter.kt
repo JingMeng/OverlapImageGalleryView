@@ -1,6 +1,6 @@
 package com.mindinventory.overlaprecylcerview.adapters
 
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import com.mindinventory.overlaprecylcerview.R
@@ -10,7 +10,7 @@ import com.mindinventory.overlaprecylcerview.listeners.OverlapRecyclerViewClickL
 import java.util.*
 
 
-abstract class OverlapRecyclerViewAdapter<S, T : RecyclerView.ViewHolder?>(private val overlapLimit: Int = 0, private val overlapWidth: Int = 0)
+abstract class OverlapRecyclerViewAdapter<S, T : RecyclerView.ViewHolder>(private val overlapLimit: Int = 0, private val overlapWidth: Int = 0)
     : RecyclerView.Adapter<T>() {
 
     //S = Model , T = RecyclerView.ViewHolder
